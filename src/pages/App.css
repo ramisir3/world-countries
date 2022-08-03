@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.header-container {
+  height: 80px;
+}
+
+.title {
+  font-weight: 800;
+}
+
+@media only screen and (min-width: 1400px) {}

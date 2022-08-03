@@ -1,0 +1,58 @@
+{
+    "GER": {
+        "name": "Germany",
+        "population": "81,770,900",
+        "region": "Europe",
+        "capital": "Berlin",
+        "img" : "de.svg"
+    },
+    "USA": {
+        "name": "United States of America",
+        "population": "323,947,000",
+        "region": "Americas",
+        "capital": "Washington D.C.",
+        "img" : "us.svg"
+    },
+    "BRA": {
+        "name": "Brazil",
+        "population": "206,135,893",
+        "region": "Americas",
+        "capital": "Brasilia",
+        "img" : "br.svg"
+    },
+    "ICE": {
+        "name": "ICeland",
+        "population": "334,300",
+        "region": "Europe",
+        "capital": "Reykjavik",
+        "img" : "is.svg"
+    },
+    "AFG": {
+        "name": "Afghanistan",
+        "population": "27,667,145",
+        "region": "Asia",
+        "capital": "Kabul",
+        "img" : "af.svg"
+    },
+    "ALI": {
+        "name": "Aland Islands",
+        "population": "28,875",
+        "region": "Europe",
+        "capital": "Mariehamn",
+        "img" : "ax.svg"
+    },
+    "ALB": {
+        "name": "Albania",
+        "population": "2,886,026",
+        "region": "Europe",
+        "capital": "Tirana",
+        "img" : "al.svg"
+    },
+    "AlG": {
+        "name": "Algeria",
+        "population": "40,400,000",
+        "region": "Africa",
+        "capital": "Algiers",
+        "img" : "dz.svg"
+    }
+}
