@@ -1,6 +1,7 @@
 import {
-    Card, CardContent, CardMedia, Typography
+    Card, CardContent, CardMedia, IconButton, Typography, Box
 } from '@mui/material';
+import StarIcon from '@mui/icons-material/Star';
 import { useNavigate, Link } from "react-router-dom";
 
 export default function CountryCard(props) {
@@ -8,23 +9,25 @@ export default function CountryCard(props) {
 
     return (
         <div class="col-xxl-4">
-            <Link to="/details">
-                <Card sx={{
-                    height: "340px",
-                    boxShadow: "0 1px 5px -3px #858585",
-                    marginBottom: "40px",
-                    marginTop: "9px"
-                }}
-                    onClick={() => navigate("/")}
-                >
-                    <CardMedia
-                        component="img"
-                        image={require("../flags/" + props.country.img)}
-                        height="170px"
-                    />
-                    <CardContent sx={{
-                        p: 3
-                    }}>
+            {/* <Link to="/details"> */}
+            <Card sx={{
+                height: { xs: (window.innerWidth / 2) + 200, xl: "340px" },
+                width: { xs: window.innerWidth - (window.innerWidth / 10), xl: "auto" },
+                boxShadow: "0 1px 5px -3px #858585",
+                marginBottom: "40px",
+                marginTop: "9px"
+            }}
+            >
+                <CardMedia
+                    component="img"
+                    image={require("../flags/" + props.country.img)}
+                    sx={{ height: { xs: window.innerWidth / 2, lg: "170px" } }}
+                    onClick={() => navigate("/details")}
+                />
+                <CardContent sx={{
+                    p: 3
+                }}>
+                    <Box onClick={() => navigate("/details")}>
                         <Typography variant='h6' sx={{ mb: 2, fontWeight: 600 }}>
                             {props.country.name}
                         </Typography>
@@ -37,9 +40,22 @@ export default function CountryCard(props) {
                         <Typography variant='subtitle2' display='block'>
                             <strong>Capital: </strong>{props.country.capital}
                         </Typography>
-                    </CardContent>
-                </Card>
-            </Link>
-        </div>
+                    </Box>
+                    <Box sx={{
+                        display: { xs: "flex", xl: "none" },
+                        flexDirection: "row-reverse",
+                    }}>
+                        <IconButton edge="end" aria-label="favourite"
+                            sx={{
+                                paddingRight: 2
+                            }}>
+                            <StarIcon></StarIcon>
+                        </IconButton>
+                    </Box>
+                </CardContent>
+
+            </Card>
+            {/* </Link> */}
+        </div >
     )
 }

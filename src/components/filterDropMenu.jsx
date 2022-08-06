@@ -10,7 +10,7 @@ export default function FilterDropMenu() {
     }
 
     return (
-        <FormControl sx={{ width: "180px", boxShadow: "0 3px 10px -7px #858585",}}>
+        <FormControl sx={{ width: "180px", boxShadow: "0 3px 10px -7px #858585", }}>
             <InputLabel id="filterByLabel" sx={{
                 color: "black"
             }}>
@@ -18,7 +18,7 @@ export default function FilterDropMenu() {
             <Select
                 labelId="filterByLabel"
                 id="filter"
-                // value={filter}
+                value={filter}
                 label="Fitler by"
                 onChange={handleChange}
             >

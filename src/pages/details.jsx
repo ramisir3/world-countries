@@ -3,7 +3,7 @@ import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import country from "../mock-details.json"
 import './details.css';
 import { useNavigate } from "react-router-dom";
-
+import Avatar from '@mui/material/Avatar';
 
 export default function Details() {
     const navigate = useNavigate();
@@ -13,9 +13,13 @@ export default function Details() {
                 <Button onClick={() => navigate("/")}
                     variant="contained" startIcon={<KeyboardBackspaceIcon />} sx={{ backgroundColor: "white", color: "black" }}> Back </Button>
             </div>
-            <div class="row mt-5 pt-xxl-0 pt-5">
-                <div class="col-xxl-5 col-sm-12 mb-5 mb-xxl-0">
-                    <img src={country.flags.svg} alt={country.name.common} class="flag-img-details"></img>
+            <div class="row">
+                <div class="col-xl-5 col-sm-12 mt-4 p-0">
+                    <Avatar variant="square" src={country.flags.svg} alt={country.name.common} sx={{
+                        width: { xs: window.innerWidth - (window.innerWidth / 15), xl: "90%" },
+                        height: { xs: window.innerHeight / 3, xl: "300px" },
+                        padding: 2
+                    }}></Avatar>
                 </div>
                 <div class="col-xl-6 mt-5 ">
                     <div class="country-info row">
