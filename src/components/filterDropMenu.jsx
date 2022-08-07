@@ -3,7 +3,7 @@ import React from 'react';
 
 
 export default function FilterDropMenu() {
-    const [filter, setFilter] = React.useState("Filter By");
+    const [filter, setFilter] = React.useState("All");
 
     const handleChange = (event) => {
         setFilter(event.target.value);

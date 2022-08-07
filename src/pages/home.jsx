@@ -5,7 +5,7 @@ import FilterDropMenu from '../components/filterDropMenu';
 import { InputBase } from '@mui/material';
 import CountryCard from '../components/countryCard';
 import FavListItem from '../components/favouriteListItem';
-
+import { Container } from '@mui/system';
 
 
 
@@ -22,7 +22,7 @@ export default function Home() {
     const fav = <FavListItem country={mockCountry} />;
 
     return (
-        <main class="main container" style={{ padding: "1rem 0", marginTop: "100px" }}>
+        <Container fixed class="main">
             <div
                 class="search-and-filter d-xxl-flex justify-content-xxl-between flex-xxl-nowrap mx-auto align-items-center mb-xxl-0 mb-5">
                 <div class="search-bar" name="dark-shadow">
@@ -49,6 +49,6 @@ export default function Home() {
                     {cards}
                 </div>
             </div>
-        </main>
+        </Container>
     );
 }
