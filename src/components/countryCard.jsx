@@ -11,8 +11,8 @@ export default function CountryCard(props) {
         <div class="col-xxl-4">
             {/* <Link to="/details"> */}
             <Card sx={{
-                height: { xs: (window.innerWidth / 2) + 200, xl: "340px" },
-                width: { xs: window.innerWidth - (window.innerWidth / 10), xl: "auto" },
+                height: { xs: (window.innerWidth / 2) + 200, lg: "340px" },
+                width: { xs: window.innerWidth - (window.innerWidth / 10), lg: "auto" },
                 boxShadow: "0 1px 5px -3px #858585",
                 marginBottom: "40px",
                 marginTop: "9px"
@@ -42,7 +42,7 @@ export default function CountryCard(props) {
                         </Typography>
                     </Box>
                     <Box sx={{
-                        display: { xs: "flex", xl: "none" },
+                        display: { xs: "flex", lg: "none" },
                         flexDirection: "row-reverse",
                     }}>
                         <IconButton edge="end" aria-label="favourite"
