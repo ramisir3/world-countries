@@ -16,8 +16,8 @@ export default function Details() {
             <div class="row">
                 <div class="col-xl-5 col-sm-12 mt-4 p-0">
                     <Avatar variant="square" src={country.flags.svg} alt={country.name.common} sx={{
-                        width: { xs: window.innerWidth - (window.innerWidth / 15), xl: "90%" },
-                        height: { xs: window.innerHeight / 3, xl: "300px" },
+                        width: { xs: window.innerWidth - (window.innerWidth / 15), lg: "90%" },
+                        height: { xs: window.innerHeight / 3, lg: "300px" },
                         padding: 2
                     }}></Avatar>
                 </div>
