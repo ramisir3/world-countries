@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/world-countries/static/css/main.2e6244ef.css",
+    "main.js": "/world-countries/static/js/main.d1e65c1b.js",
+    "static/media/af.svg": "/world-countries/static/media/af.39e74801e5626eaaf6f0.svg",
+    "static/media/NunitoSans-Regular.ttf": "/world-countries/static/media/NunitoSans-Regular.a427ddbe4dc20889d6e0.ttf",
+    "static/media/al.svg": "/world-countries/static/media/al.dd17f9b0b19aa16e7afe.svg",
+    "static/media/br.svg": "/world-countries/static/media/br.0195f1434b135a18881f.svg",
+    "index.html": "/world-countries/index.html",
+    "static/media/us.svg": "/world-countries/static/media/us.14abad61351d51223436.svg",
+    "static/media/ax.svg": "/world-countries/static/media/ax.dae59e50e62504789ce5.svg",
+    "static/media/dz.svg": "/world-countries/static/media/dz.8fee433ae9c49de475a8.svg",
+    "static/media/is.svg": "/world-countries/static/media/is.bb94eebadbe98e459758.svg",
+    "static/media/de.svg": "/world-countries/static/media/de.ed5be69598a5a9c32bc8.svg",
+    "main.2e6244ef.css.map": "/world-countries/static/css/main.2e6244ef.css.map",
+    "main.d1e65c1b.js.map": "/world-countries/static/js/main.d1e65c1b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e6244ef.css",
+    "static/js/main.d1e65c1b.js"
+  ]
+}
