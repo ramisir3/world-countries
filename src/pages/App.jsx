@@ -17,11 +17,11 @@ function App() {
   return (
     <BrowserRouter>
       <CssBaseline />
-        <Header />
+      <Header />
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="details" element={<Details />} />
+        <Route path="/world-countries" element={<Home />} />
+        <Route path="/world-countries/details" element={<Details />} />
       </Routes>
     </BrowserRouter>
   );

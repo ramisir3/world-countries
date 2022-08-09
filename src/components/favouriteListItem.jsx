@@ -17,7 +17,7 @@ export default function FavListItem(props) {
                 paddingRight: "10px"
             }}
             >
-                <ListItemAvatar onClick={() => navigate("/details")}>
+                <ListItemAvatar onClick={() => navigate("/world-countries/details")}>
                     <Avatar variant="square" alt={props.country.name.common} src={props.country.flags.svg}
                         sx={{
                             borderRadius: "10px",
@@ -28,7 +28,7 @@ export default function FavListItem(props) {
                 </ListItemAvatar>
                 <ListItemText sx={{ fontWeight: 700 }}
                     primary={props.country.name.common}
-                    onClick={() => navigate("/details")}
+                    onClick={() => navigate("/world-countries/details")}
                 />
                 <IconButton edge="end" aria-label="delete">
                     <CloseIcon />

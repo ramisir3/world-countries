@@ -10,7 +10,7 @@ export default function Details() {
     return (
         <main class="container" style={{ marginTop: "120px" }}>
             <div>
-                <Button onClick={() => navigate("/")}
+                <Button onClick={() => navigate("/world-countries")}
                     variant="contained" startIcon={<KeyboardBackspaceIcon />} sx={{ backgroundColor: "white", color: "black" }}> Back </Button>
             </div>
             <div class="row">

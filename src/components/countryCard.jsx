@@ -22,12 +22,12 @@ export default function CountryCard(props) {
                     component="img"
                     image={require("../flags/" + props.country.img)}
                     sx={{ height: { xs: window.innerWidth / 2, lg: "170px" } }}
-                    onClick={() => navigate("/details")}
+                    onClick={() => navigate("/world-countries/details")}
                 />
                 <CardContent sx={{
                     p: 3
                 }}>
-                    <Box onClick={() => navigate("/details")}>
+                    <Box onClick={() => navigate("/world-countries/details")}>
                         <Typography variant='h6' sx={{ mb: 2, fontWeight: 600 }}>
                             {props.country.name}
                         </Typography>
