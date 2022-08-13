@@ -11,7 +11,6 @@ import * as React from 'react';
 import Header from '../components/titleAndButtonHeader';
 import { CssBaseline } from '@mui/material';
 
-// hello
 
 function App() {
   return (
