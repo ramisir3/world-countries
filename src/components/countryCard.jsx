@@ -1,11 +1,12 @@
 import {
-    Card, CardContent, CardMedia, IconButton, Typography, Box
+    Card, CardContent, CardMedia, IconButton, Typography, Box, useTheme
 } from '@mui/material';
 import StarIcon from '@mui/icons-material/Star';
 import { useNavigate, Link } from "react-router-dom";
 
 export default function CountryCard(props) {
     const navigate = useNavigate();
+    const theme = useTheme();
 
     return (
         <div class="col-xxl-4">
@@ -15,7 +16,8 @@ export default function CountryCard(props) {
                 width: { xs: window.innerWidth - (window.innerWidth / 10), lg: "auto" },
                 boxShadow: "0 1px 5px -3px #858585",
                 marginBottom: "40px",
-                marginTop: "9px"
+                marginTop: "9px",
+                backgroundColor: theme.palette.primary.main,
             }}
             >
                 <CardMedia

@@ -1,4 +1,4 @@
-import { Button } from "@mui/material";
+import { Button, useTheme } from "@mui/material";
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import country from "../mock-details.json"
 import './details.css';
@@ -7,11 +7,21 @@ import Avatar from '@mui/material/Avatar';
 
 export default function Details() {
     const navigate = useNavigate();
+    const theme = useTheme();
+
+    document.getElementsByTagName("body")[0].style.backgroundColor = (theme.palette.mode === 'light' ? theme.palette.primary.main : theme.palette.secondary.main);
+    document.getElementById("root").style.backgroundColor = (theme.palette.mode === 'light' ? theme.palette.primary.main : theme.palette.secondary.main);
     return (
-        <main class="container" style={{ marginTop: "120px" }}>
+        <main class="container"
+            style={{
+                marginTop: "120px",
+                backgroundColor: (theme.palette.mode === 'light' ? theme.palette.primary.main : theme.palette.secondary.main)
+            }}>
             <div>
                 <Button onClick={() => navigate("/world-countries")}
-                    variant="contained" startIcon={<KeyboardBackspaceIcon />} sx={{ backgroundColor: "white", color: "black" }}> Back </Button>
+                    variant="contained" startIcon={<KeyboardBackspaceIcon />} sx={{
+                        backgroundColor: theme.palette.primary.main,
+                    }}> Back </Button>
             </div>
             <div class="row">
                 <div class="col-xl-5 col-sm-12 mt-4 p-0">
@@ -40,11 +50,11 @@ export default function Details() {
                     <div name="text" class="border-countries mt-3">
                         <div class="border-text mt-1"><strong>Border Countries: </strong></div>
                         <div class="countries-btns">
-                            <Button variant="contained" sx={{ backgroundColor: "white", color: "black", fontSize: "12px", fontWeight: 600, marginRight: 2 }}> Jordan </Button>
-                            <Button variant="contained" sx={{ backgroundColor: "white", color: "black", fontSize: "12px", fontWeight: 600, marginRight: 2 }}> Egypt </Button>
+                            <Button variant="contained" sx={{ backgroundColor: theme.palette.primary.main, fontSize: "12px", fontWeight: 600, marginRight: 2 }}> Jordan </Button>
+                            <Button variant="contained" sx={{ backgroundColor: theme.palette.primary.main, fontSize: "12px", fontWeight: 600, marginRight: 2 }}> Egypt </Button>
                         </div>
                     </div>
-                </div>`
+                </div>
             </div>
         </main>
     );
