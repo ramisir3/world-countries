@@ -1,7 +1,5 @@
 .main {
-    margin-top: 180px;
-    margin-left: 5%;
-    margin-right: 5%;
+    padding: 20px;
 }
 
 .search-and-filter {
@@ -9,19 +7,11 @@
 }
 
 .search-bar {
-    background-color: white;
     border-width: 2px;
     border-radius: 2px;
-    box-shadow: 0 3px 10px -7px #858585;
     width: 100%;
+    margin-top: 90px;
     margin-bottom: 30px;
-}
-
-.search-box {
-    border: none;
-    font-size: 25px;
-    height: 80px;
-    width: 90%;
 }
 
 .search-dark::placeholder {
@@ -35,88 +25,14 @@
     box-shadow: 0 3px 10px -7px #202c37 !important;
 }
 
-.filter {
-    display: inline-block;
-    position: relative;
-    height: 100px;
-    font-size: 25px;
-    width: 30%;
-    margin-bottom: 70px;
-    padding: 0 !important;
-}
-
-.drop-btn {
-    background-color: #ffffff;
-    border: none;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 3px 10px -7px #858585;
-    border-radius: 5px;
-}
-
-.drop-btn i {
-    margin-left: 20%;
-}
-
-.Regions {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 5px;
-    margin-top: 1.5px;
-    padding: 10px;
-}
-
-.Regions a {
-    color: black;
-    padding: 7px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.Regions a:hover {
-    background-color: #ddd;
-}
-
-.filter:hover .Regions {
-    display: block;
-}
-
-.search-bar>i {
+.search-bar-icon {
     color: #858585;
 }
 
-.flag-grid {
-    display: block;
-    margin-top: 40px;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-
-.grid-item {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px !important;
-    border: none !important;
-}
-
-.item-info {
-    font-size: 30px;
-}
 
 .h5-custom {
     font-weight: 800 !important;
     font-size: 35px !important;
-}
-
-.flag-img {
-    width: 100%;
-    height: 30%;
-    object-fit: cover;
 }
 
 .countries {
@@ -154,10 +70,6 @@ a:active {
 }
 
 @media only screen and (min-width: 992px) {
-    .main {
-        margin-top: 120px;
-    }
-
     .search-and-filter {
         height: auto;
     }
@@ -168,42 +80,12 @@ a:active {
         width: 33%;
         align-items: center;
         justify-content: space-around;
-        margin: 0;
-    }
-
-    .search-box {
-        height: auto;
-        font-size: 14px;
-    }
-
-    .filter {
-        font-size: 14px;
-        height: 50px;
-        width: 15%;
         margin-bottom: 0;
-    }
-
-    .grid-item {
-        margin-top: 10px;
-        margin-bottom: 40px;
-        height: 320px;
-        box-shadow: 0 1px 5px -3px #858585;
-    }
-
-    .item-info {
-        padding: 0;
-        margin: 10%;
-        font-size: small;
     }
 
     .h5-custom {
         font-weight: 600 !important;
         font-size: 16px !important;
-    }
-
-    .flag-img {
-        width: 100%;
-        height: 180px;
     }
 
     .scroll-down {
@@ -219,76 +101,10 @@ a:active {
     .favorites-section {
         width: 20rem;
         height: calc(100vh - 227px) !important;
-        background-color: white;
     }
 
     .favorites {
         width: 100%;
         height: calc(100vh - 300px) !important;
     }
-
-    /* .tile-flag {
-        height: 25px;
-        width: 40px;
-        object-fit: cover;
-        border-radius: 7px;
-        padding: 2px;
-    }
-
-    .fav-tile {
-        height: 40px;
-        padding: 5px;
-    }
-
-    .tile-txt {
-        padding-left: 15px;
-        font-weight: bolder;
-    }
-*/
-    /* ::-webkit-scrollbar {
-        width: 6px;
-    } */
-
-    /*
-    .light-bar::-webkit-scrollbar-track {
-        background: white;
-    }
-
-
-    .light-bar::-webkit-scrollbar-thumb {
-        border-radius: 3px;
-        background: #b3b3b3;
-    }
-
-
-    .light-bar::-webkit-scrollbar-thumb:hover {
-        background: #858585;
-    }
-
-    .dark-bar::-webkit-scrollbar-track {
-        background: #2b3945;
-    }
-
-
-    .dark-bar::-webkit-scrollbar-thumb {
-        border-radius: 3px;
-        background: #858585;
-    }
-
-
-    .dark-bar::-webkit-scrollbar-thumb:hover {
-        background: white;
-    }
-
-    .hover-default:hover {
-        cursor: pointer;
-    }
-
-    .dragged-element {
-        opacity: 0.5;
-    }
-
-    .drop-list-dragover {
-        outline: 1px solid #27ae60;
-    } */
 }
