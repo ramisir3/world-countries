@@ -2,12 +2,13 @@ import { InputLabel, Select, MenuItem, FormControl, useTheme } from '@mui/materi
 import React from 'react';
 
 
-export default function FilterDropMenu() {
+export default function FilterDropMenu(props) {
     const theme = useTheme();
     const [filter, setFilter] = React.useState("All");
 
     const handleChange = (event) => {
         setFilter(event.target.value);
+        props.onFilterChange(event.target.value);
     }
 
     return (

@@ -42,7 +42,7 @@ function App() {
         <Header onToggleMode={toggleMode} />
         <Routes>
           <Route path="/world-countries" element={<Home />} />
-          <Route path="/world-countries/details" element={<Details />} />
+          <Route path="/world-countries/details/:handle" element={<Details />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
