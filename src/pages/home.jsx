@@ -27,11 +27,8 @@ export default function Home() {
             backgroundColor: theme.palette.secondary.main,
         }}>
             <div
-                class="search-and-filter d-xxl-flex justify-content-xxl-between flex-xxl-nowrap mx-auto align-items-baseline mb-xxl-0 mb-5"
-                sx={{
-                    backgroundColor: theme.palette.secondary.main,
-                }}>
-                <div class="search-bar" name="dark-shadow" sx={{ backgroundColor: theme.palette.primary.main, }}>
+                class="search-and-filter d-xl-flex justify-content-xl-between flex-xl-nowrap mx-auto align-items-baseline mb-xl-0 mb-5">
+                <div class="search-bar mb-3 mb-xl-0" name="dark-shadow" sx={{ backgroundColor: theme.palette.primary.main, }}>
                     <Box sx={{ display: "flex", backgroundColor: theme.palette.primary.main, width: "100%", height: "100%", alignItems: "center" }}>
                         <i name="icon" class="fa-solid fa-search px-4 search-bar-icon" ></i>
                         <InputBase
@@ -46,8 +43,8 @@ export default function Home() {
                 <FilterDropMenu>
                 </FilterDropMenu>
             </div>
-            <div class="pt-xl-0 mt-xxl-4 d-xxl-flex">
-                <Box className="favorites-section d-none d-xxl-block mt-2 me-4 flex-shrink-0 ps-4 pt-4 pe-1" name="dark"
+            <div class="pt-xl-0 mt-xl-4 d-xl-flex">
+                <Box className="favorites-section d-none d-xl-block mt-2 me-4 flex-shrink-0 ps-4 pt-4 pe-1" name="dark"
                     sx={{
                         backgroundColor: theme.palette.primary.main
                     }}>
