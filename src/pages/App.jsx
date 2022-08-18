@@ -12,13 +12,11 @@ import Header from '../components/titleAndButtonHeader';
 import { CssBaseline } from '@mui/material';
 
 
-
 function App() {
   return (
     <BrowserRouter>
       <CssBaseline />
       <Header />
-
       <Routes>
         <Route path="/world-countries" element={<Home />} />
         <Route path="/world-countries/details" element={<Details />} />

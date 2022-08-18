@@ -24,8 +24,8 @@ export default function Home() {
     return (
         <Container fixed class="main">
             <div
-                class="search-and-filter d-xxl-flex justify-content-xxl-between flex-xxl-nowrap mx-auto align-items-center mb-xxl-0 mb-5">
-                <div class="search-bar" name="dark-shadow">
+                class="search-and-filter d-xl-flex justify-content-xl-between flex-xl-nowrap mx-auto align-items-center mb-xl-0 mb-5">
+                <div class="search-bar mb-3 mb-xl-0" name="dark-shadow">
                     <i name="icon" class="fa-solid fa-search px-4" ></i>
                     <InputBase
                         sx={{ ml: 1, flex: 1 }}
@@ -36,8 +36,8 @@ export default function Home() {
                 <FilterDropMenu>
                 </FilterDropMenu>
             </div>
-            <div class="pt-xl-0 mt-xxl-4 d-xxl-flex">
-                <div class="favorites-section d-none d-xxl-block mt-2 me-4 flex-shrink-0 ps-4 pt-4 pe-1" name="dark">
+            <div class="pt-xl-0 mt-xl-4 d-xl-flex">
+                <div class="favorites-section d-none d-xl-block mt-2 me-4 flex-shrink-0 ps-4 pt-4 pe-1" name="dark">
                     <div>
                         <h5 class="h5-custom">Favourites</h5>
                     </div>
