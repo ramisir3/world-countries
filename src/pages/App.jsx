@@ -12,7 +12,8 @@ import Header from '../components/titleAndButtonHeader';
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
 import { lightTheme, darkTheme } from '../themes/themes';
 import { useState } from 'react';
-
+import { HTML5Backend } from 'react-dnd-html5-backend'
+import { DndProvider } from 'react-dnd'
 
 function App() {
 
@@ -37,14 +38,16 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
-        <CssBaseline />
-        <Header onToggleMode={toggleMode} />
-        <Routes>
-          <Route path="/world-countries" element={<Home />} />
-          <Route path="/world-countries/details/:handle" element={<Details />} />
-        </Routes>
-      </BrowserRouter>
+      <DndProvider backend={HTML5Backend}>
+        <BrowserRouter>
+          <CssBaseline />
+          <Header onToggleMode={toggleMode} />
+          <Routes>
+            <Route path="/world-countries" element={<Home />} />
+            <Route path="/world-countries/details/:handle" element={<Details />} />
+          </Routes>
+        </BrowserRouter>
+      </DndProvider>
     </ThemeProvider>
   );
 }
