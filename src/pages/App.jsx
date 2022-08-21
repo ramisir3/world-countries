@@ -9,19 +9,46 @@ import Home from './home';
 
 import * as React from 'react';
 import Header from '../components/titleAndButtonHeader';
-import { CssBaseline } from '@mui/material';
-
+import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
+import { lightTheme, darkTheme } from '../themes/themes';
+import { useState } from 'react';
+import { HTML5Backend } from 'react-dnd-html5-backend'
+import { DndProvider } from 'react-dnd'
 
 function App() {
+
+  let mode;
+  if (localStorage.getItem('mode')) {
+    mode = localStorage.getItem('mode');
+  } else {
+    localStorage.setItem('mode', 'light');
+    mode = 'light';
+  }
+
+  let [theme, setTheme] = useState(createTheme(mode === 'light' ? lightTheme : darkTheme))
+
+
+  function toggleMode() {
+    let newMode = (localStorage.getItem('mode') === 'light' ? 'dark' : 'light');
+    setTheme(createTheme(newMode === 'light' ? lightTheme : darkTheme));
+    localStorage.setItem('mode', newMode);
+  }
+
+  document.getElementById("root").style.backgroundColor = theme.palette.secondary.main;
+
   return (
-    <BrowserRouter>
-      <CssBaseline />
-      <Header />
-      <Routes>
-        <Route path="/world-countries" element={<Home />} />
-        <Route path="/world-countries/details" element={<Details />} />
-      </Routes>
-    </BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <DndProvider backend={HTML5Backend}>
+        <BrowserRouter>
+          <CssBaseline />
+          <Header onToggleMode={toggleMode} />
+          <Routes>
+            <Route path="/world-countries" element={<Home />} />
+            <Route path="/world-countries/details/:handle" element={<Details />} />
+          </Routes>
+        </BrowserRouter>
+      </DndProvider>
+    </ThemeProvider>
   );
 }
 
